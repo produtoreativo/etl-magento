@@ -1,8 +1,8 @@
 ## Pré-condições
 
-[Material da aula sobre o Search API](https://github.com/produtoreativo/search-api/tree/1.0.0/infra)
+[Material da aula sobre o Search API](https://github.com/produtoreativo/search-api/tree/1.0.0/infra)  
 Banco de origem com CDC ativado em uma tabela de produtos  
-Ambiente Kafka configurado com Debezium buscando os dados e criando um topico para a tabela de produtos
+Ambiente Kafka configurado com Debezium buscando os dados e criando um topico para a tabela de produtos  
 
 
 ## Executar o start
