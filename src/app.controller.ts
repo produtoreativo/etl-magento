@@ -29,7 +29,9 @@ export class AppController {
     const originalMessage = context.getMessage();
     if (originalMessage.value) {
       const decoded = await this.registry.decode(message);
-      const { MATNR: sku, MAKTX: productName } = decoded;
+      const sku = decoded[this.configService.get<string>('SKU_NAME')];
+      const productName =
+        decoded[this.configService.get<string>('PRODUCT_NAME')];
       this.logger.log(decoded);
       await this.appService.verifyProduct(sku, productName);
     }
